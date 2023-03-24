@@ -1,7 +1,7 @@
 body{
     margin: 0;
 	padding: 0;
-	background: url('../images/login1.jpg');
+	background: url('../images/login2.jpeg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	font-family: sans-serif;
@@ -19,27 +19,35 @@ form{
 }
 
 fieldset{
-	border-radius: 5px;
+	border-radius: 7px;
+	background-color:#383e3f;
+    opacity: 0.9;
 }
 
 .loginbox{
-	width: 500px;
-	height: 450px;
+	width: 500px;	 
 	background: transparent;
 	color: #ffff;
-	top: 30%;
-	right: 10%;
-	position: absolute;
-	transform: translate('-50%','-50%');
 	box-sizing: border-box;
 	padding: 10px 70px;
+	margin: auto;
+	margin-bottom: 10rem;
+    margin-top: 5rem;
 }
 
 .loginbox p{
 	margin: 0;
 	padding: 0;
 	font-weight: bold;
+	color: #cfc5a5;
 }
+.loginbox h1{
+	text-align: center;
+	font-weight: bold;
+	margin-top: 2px;
+	color: #ffc107;
+}
+
 
 .loginbox input{
 	width: 100%;
@@ -49,11 +57,11 @@ fieldset{
 .loginbox input[type="text"], input[type="password"]
 {
 	border: none;
-	border-bottom: 1px solid #ffff;
+	border-bottom: 1px solid #ece7e7;
 	background: transparent;
 	outline: none;
-	height: 40px;
-	color: #ffff;
+	height: 30px;
+	color: #e0f0afbd;
 }
 
 .loginbox input[type="submit"]
@@ -74,12 +82,14 @@ fieldset{
 
 .loginbox a{
 	color: white;
-	font-size: 13px;
+	font-size: 15px;
 	line-height: 20px;
 	
 }
 
 .loginbox a:hover
 {
-	color: #bebebe;
+	color:  #ffc107;
 }
+
+

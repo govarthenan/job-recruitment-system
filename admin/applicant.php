@@ -8,17 +8,26 @@
     <title>Applicant Management</title>
     <link rel="stylesheet" href="../css/admin.css">
     <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <style>
+        main{
+            height:100%;
+        }
+    </style>
 </head>
 
 <body>
 <header>
         <nav>
             <ul>
+            <a href="./home.php"><li class="name">JobVerteX</li></a>
                 <li><a href="../logout.php">Log-Out</a></li>
                 <li><a href="./home.php">Home</a></li>
             </ul>
         </nav>
 </header>
+<main>
+
     <div class="container">
         <div class="section blur">
             <div class="section-header">
@@ -45,11 +54,11 @@
                         </td>
                     </tr>
                     <?php }?>
-                    
                 </table>
             </div>
         </div>
-
+        </main>
+        <?php include('../footer.php') ?>  
 </body>
 
 </html>

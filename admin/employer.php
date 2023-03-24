@@ -8,6 +8,8 @@
     <title>Employer Management</title>
     <link rel="stylesheet" href="../css/admin.css">
     <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
@@ -16,11 +18,13 @@
     <header>
             <nav>
                 <ul>
+                <a href="./home.php"><li class="name">JobVerteX</li></a>
                     <li><a href="../logout.php">Log-Out</a></li>
                     <li><a href="./home.php">Home</a></li>
                 </ul>
             </nav>
     </header>
+    <main>
     <div class="container">
         <div class="section blur">
             <div class="section-header">
@@ -55,7 +59,8 @@
                 </table>
             </div>
         </div>
-
+        </main>
+        <?php include('../footer.php') ?>
 </body>
 
 </html>

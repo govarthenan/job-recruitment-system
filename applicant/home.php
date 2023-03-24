@@ -10,11 +10,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <style>
         body {
             margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            background-image: url('background.jpg');
+            background-image: url('emphome.png');
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -24,21 +25,22 @@
             align-items: center;
         }
         .wrapper {
-            font-family: Roboto;
+            font-family: 'Roboto';
             color: #000000;
-            text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8);
+            text-shadow: 1px 1px 5px rgb(255 255 255 / 27%);
             text-align: justify;
             display: flex;
             padding: 100px 0;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content:space-evenly;
+          
         }
         .selection {
-            margin: 0 30px;
+            margin: 13px 50px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: rgba(255, 255, 255, 0.605);
+            background-color: #154850de;
             background-size: auto;
             background-repeat: no-repeat;
             border-radius: 10px;
@@ -46,8 +48,14 @@
             height: 300px;
             justify-content: center;
         }
+
+        .selection:hover {
+            box-shadow: 0 0 0 2px #154850d1;
+            background-color: #154850d1;
+        }
+
         .selection button {
-            background-color: #eb675ea1;
+            background-color: #dcb747a3;
             border-radius: 28px;
             border: 0;
             display: inline-block;
@@ -60,7 +68,7 @@
             text-decoration: none;
         }
         .selection button:hover {
-            background-color: #eb675e;
+            background-color: #dcb747;
         }
         .selection button:active {
             position: relative;
@@ -68,8 +76,18 @@
         }
         h1 {
             color: #ffffff;
-            text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8);
+            text-shadow: 5px 3px 5px rgb(215 165 15 / 89%);
+            font-size :50px;
         }
+
+        h2{
+           color:#fff; 
+        }
+
+        .name{
+            color:#ffc107;
+        }
+
     </style>
     <title>Home</title>
 </head>
@@ -78,6 +96,7 @@
 <header>
     <nav>
       <ul>
+        <a href="./home.php"><li class="name">JobVerteX</li></a>
         <li><a href="../logout.php">Log-Out</a></li>
         <li><a href="./home.php">Home</a></li>
       </ul>
@@ -99,6 +118,6 @@
             
         </div>
     </div>
-    
+    <?php include('../footer.php') ?>
 </body>
 </html>

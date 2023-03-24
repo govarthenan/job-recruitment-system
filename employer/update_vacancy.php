@@ -14,10 +14,12 @@ if (isset($_GET['showV'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/navbar.css">
     <title>Update Vacancy</title>
     <style>
         body {
-            background-image: url('background.jpg');
+            background-image: url('applicant1.jpeg');
             background-repeat: no-repeat;
             background-size: cover;
             font-family: Roboto, sans-seriff;
@@ -35,17 +37,24 @@ if (isset($_GET['showV'])) {
             border-radius: 1rem;
             cursor: pointer;
             transition: all 0.5s ease-in;
-            background-color: #111;
-            color: #fff;
+            background-color: #ffc107;
+            color: #000;
         }
 
         input[type=submit]:hover {
-            background-color: #FFf;
-            color: #111
+            background-color:#e8bf44b3;
+            color: #111;
         }
 
         .card {
-            background: white;
+            background-color: rgb(18, 35, 32 , 53%);
+           box-shadow: 0 0 9px 0px rgb(238 243 246);
+           padding: 1rem;
+           border-radius: 0.3rem;
+           max-width: 70px;
+           min-width: 20%;
+           min-height: 300px;
+           color:#ffc107;
             padding: 1rem;
             border-radius: 0.3rem;
             max-width: 70px;
@@ -64,10 +73,27 @@ if (isset($_GET['showV'])) {
             padding: 10px;
             margin: auto, 0;
         }
+
+        main{
+            height:100%;
+        }
     </style>
+ 
+
 </head>
 
 <body>
+<header>
+        <nav>
+            <ul>
+            <a href="./home.php"><li class="name">JobVerteX</li></a> 
+                <li><a href="../logout.php">Log-Out</a></li>
+                <li><a href="./home.php">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
     <div class="wrapper">
         <form action="./vacancies.php?updateV=<?php echo $id ?>" method="post" class="card">
             <div class="input">
@@ -87,6 +113,9 @@ if (isset($_GET['showV'])) {
             </div>
         </form>
     </div>
+    </main>
+
+    <?php include('../footer.php')?>
 </body>
 
 </html>

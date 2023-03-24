@@ -1,3 +1,6 @@
+main {
+    height: 100%;
+}
 .column1 {
     float: left;
     width: 26%;
@@ -44,7 +47,7 @@
 }
 
 body {
-    background-image: url("../images/applicant.jpg");
+    background-image: url('../images/applicant1.jpeg');
     background-size: cover;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
@@ -53,7 +56,7 @@ body {
 
 h3 {
     font-size: 25px;
-    color: #ffffff;
+    color:#ffc107;
     margin-left: 25px;
 }
 
@@ -65,7 +68,7 @@ p {
 
 h1 {
     font-size: 45px;
-    color: #ffffff;
+    color:#ffc107;
     margin-left: 200px;
     margin-top: 10px;
 }
@@ -75,6 +78,7 @@ h1 {
     flex-wrap: wrap;
     padding: 10px;
     margin-left: 68px;
+    margin-bottom: 20rem;
 }
 
 .flex-container>div {
@@ -117,4 +121,8 @@ h1 {
 
 .button a:hover {
     color: #000000;
+}
+
+a {
+    color:#e2e5b6;
 }

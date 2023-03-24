@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/style3.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <script>
         function faq(ele) {
             var x = ele.parentElement.nextElementSibling.style.cssText;
@@ -37,7 +38,7 @@
 
                 <div>
                     <p class="question">Can I see a list of jobs I previously applied to? <span onclick='faq(this)' class="opener">+</span></p>
-                    <p class="answer">Job seekers who apply for jobs on Vacan-Z may see a history of jobs they have applied
+                    <p class="answer">Job seekers who apply for jobs on JobVerteX may see a history of jobs they have applied
                         to on our site.</p>
                 </div>
 
@@ -45,7 +46,7 @@
                     <p class="question">Account Security? <span onclick='faq(this)' class="opener">+</span></p>
                     <p class="answer">The privacy and security of our Vacan-Z members are very important to us. We encourage
                         all of our members to exercise caution with their online passwords.
-                        We recommend that you create a strong password to help strengthen your security on Vacan-Z.</p>
+                        We recommend that you create a strong password to help strengthen your security on JobVerteX.</p>
                 </div>
             </div>
         </div>

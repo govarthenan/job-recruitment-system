@@ -7,6 +7,7 @@ session_start();
 
 <head>
     <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <style>
         * {
             box-sizing: border-box;
@@ -15,7 +16,7 @@ session_start();
 
         body {
             margin: 0;
-            background-image: url('background.jpg');
+            background-image: url('emphome.png');
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -31,12 +32,13 @@ session_start();
             border: 0px;
             text-align: center;
             padding: 1rem;
-            background-color: rgba(233, 233, 244, 0.3);
+            background-color: #154850de;
+            text-shadow: 1px 1px 5px rgb(255 255 255 / 27%);
         }
 
         .column:hover {
-            box-shadow: 0 0 0 2px #ddeeff;
-            background-color: rgba(233, 233, 244, 0.6);
+            box-shadow: 0 0 0 2px #154850d1;
+            background-color: #154850d1;
         }
 
         .column .header {
@@ -56,33 +58,54 @@ session_start();
             display: d-flex;
             gap: 2rem;
             margin: 1rem;
-            margin-top: 3rem;
+            margin-top: 7rem;
+            margin-bottom: 8rem;
+            justify-content: space-evenly;
+
         }
 
         button {
-            font-weight: bolder;
-            background-color: #FFf;
+            background-color: #dcb747a3;
+            border-radius: 28px;
             border: 0;
-            padding: 0.5rem;
-            border-radius: 1rem;
+            display: inline-block;
             cursor: pointer;
-            transition: all 0.5s ease-in;
+            color: #ffffff;
+            font-family: Verdana;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 16px 31px;
+            text-decoration: none;
+            margin-bottom: 25px;
         }
 
         button:hover {
-            background-color: #111;
+            background-color: #dcb747;
             color: #fff;
+        }
+       
+        button:active {
+            position: relative;
+            top: 1px;
         }
 
         h1 {
-            color: #fff;
+            color: #ffffff;
+            text-shadow: 5px 3px 5px rgb(215 165 15 / 89%);
+            font-size :50px;
         }
+
+        h2{
+           color:#fff; 
+        }
+
     </style>
 </head>
 
 <body>
     <nav>
         <ul>
+        <a href="./home.php"><li class="name">JobVerteX</li></a>
             <li><a href="../logout.php">Log-Out</a></li>
             <li><a href="./home.php">Home</a></li>
         </ul>
@@ -106,7 +129,7 @@ session_start();
 
         </div>
     </div>
-    <!-- <?php include('../footer.php')?> -->
+    <?php include('../footer.php')?> 
 </body>
 
 </html>

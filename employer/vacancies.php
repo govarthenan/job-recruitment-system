@@ -11,18 +11,20 @@ session_start();
     <title>Vacancy</title>
     <link rel="stylesheet" href="../css/employer2.css">
     <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
+            <a href="./home.php"><li class="name">JobVerteX</li></a> 
                 <li><a href="../logout.php">Log-Out</a></li>
                 <li><a href="./home.php">Home</a></li>
             </ul>
         </nav>
     </header>
-
+<main>
     <div class="container">
         <div class="section blur">
             <div class="section-header">
@@ -36,15 +38,15 @@ session_start();
                     <div class="card">
                         <div class="card-section">
                             <div class="card-header">
-                                <h3>Vacancy</h3>
+                                <p1>Vacancy</p1>
                             </div>
                             <div class="card-body">
-                                <p> Vacancy Name: <?php echo $row['name']; ?>
+                                <p1> Vacancy Name: <br><p2><?php echo $row['name']; ?></p2>
                                     <br /><br />
-                                    Minimal Qualification: <?php echo $row['minqualification']; ?>
-                                    <br /><br />
-                                    Details: <?php echo $row['details']; ?>
-                                </p>
+                                     Minimal Qualification: <br><p2><?php echo $row['minqualification']; ?></p2>
+                                     <br /><br />
+                                    Details: <br><p2><?php echo $row['details']; ?></p2>
+                                </p1>
                             </div>
                         </div>
                         <div class="card-footer">
@@ -57,11 +59,12 @@ session_start();
                         </div>
                     </div>
                 <?php } ?>
-
             </div>
         </div>
-    </div>
-    <?php include('./footer.php')?>
+    </div>  
+</main>
+    <?php include('../footer.php')?>
+    
 </body>
 
 </html>

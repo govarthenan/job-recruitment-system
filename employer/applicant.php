@@ -10,6 +10,8 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/employer.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    
     <title>Applicant details</title>
 </head>
 
@@ -17,6 +19,7 @@ session_start();
     <header>
         <nav>
             <ul>
+            <a href="./home.php"><li class="name">JobVerteX</li></a>
                 <li><a href="../logout.php">Log-Out</a></li>
                 <li><a href="./home.php">Home</a></li>
             </ul>
@@ -58,7 +61,7 @@ session_start();
             <?php } ?>
         </div>
     </div>
-    <?php include('./footer.php')?>
+    <?php include('../footer.php')?>
 </body>
 
 </html>

@@ -3,7 +3,7 @@
     if(count($_POST) > 0){
         include("./php/db_conn.php");
         extract($_POST);
-        $password=md5($password);
+        $password= md5($password);
         $sql = "SELECT * FROM user WHERE username = \"$user_name\" AND password = \"$password\";";
         $result = mysqli_query($conn, $sql);
         

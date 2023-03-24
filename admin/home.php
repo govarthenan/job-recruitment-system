@@ -10,8 +10,11 @@ if(!isset($_SESSION['uName'])){
 <head>
   <title>admin home</title>
   <style>
+    html{
+      overflow-x:hidden;
+    }
     body {
-      background-image: url("../images/admin.jfif");
+      background-image: url("applicant1.jpeg");
       background-size: cover;
       font-family: sans-serif;
       height: 800px;
@@ -28,6 +31,10 @@ if(!isset($_SESSION['uName'])){
       padding: 12px 225px;
     }
 
+    .row{
+      position: absolute;
+    }
+
     .row:after {
       display: table;
     }
@@ -42,7 +49,8 @@ if(!isset($_SESSION['uName'])){
       display: inline-block;
       margin: 0 125px;
       padding: 12px 0;
-      color: #ffffff;
+      color: #ffc107;
+      background-color: #113e45c2;
       border: 0.5px solid #ffffff;
       text-align: center;
       position: relative;
@@ -69,19 +77,29 @@ if(!isset($_SESSION['uName'])){
     .button a:hover {
       color: #000000;
     }
+    
+    main{
+      height: 100% ;
+    }
+
   </style>
   <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/footer.css">
+    
 </head>
 
 <body>
   <header>
     <nav>
       <ul>
+      <a href="./home.php"><li class="name">JobVerteX</li></a>
         <li><a href="../logout.php">Log-Out</a></li>
         <li><a href="./home.php">Home</a></li>
       </ul>
     </nav>
   </header>
+
+  <main>
   <div class="row">
     <div class="column">
       <img src="../images/user.png" width="100px" height="100px">
@@ -102,6 +120,9 @@ if(!isset($_SESSION['uName'])){
       </div>
     </div>
   </div>
+  </main>
+
+  <?php include('../footer.php') ?>
 </body>
 
 </html>

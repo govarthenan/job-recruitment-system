@@ -14,13 +14,14 @@
 }
 
 * {
-    margin: 0;
+    margin: 1px;
     box-sizing: border-box;
-    font-family: monospace;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16  px;
 }
 
 body {
-    background-image: url('../employer/background.jpg');
+    background-image: url('../images/applicant1.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -36,6 +37,7 @@ body {
     text-align: center;
     padding: 1rem;
     background-color: rgba(233, 233, 244, 0.3);
+    font-family: sy;
 }
 
 .section-header {
@@ -48,6 +50,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: sy;
 }
 
 .cards {
@@ -60,11 +63,12 @@ body {
 }
 
 .card {
-    background: white;
+    background-color: rgb(18, 35, 32 , 53%);
+    box-shadow: 0 0 9px 0px rgb(238 243 246);
     padding: 1rem;
     border-radius: 0.3rem;
-    max-width: 70px;
-    min-width: 20%;
+    max-width: 80px;
+    min-width: 44%;
     min-height: 300px;
     display: flex;
     flex-direction: column;
@@ -102,21 +106,28 @@ button {
     border-radius: 1rem;
     cursor: pointer;
     transition: all 0.5s ease-in;
-    background-color: #111;
-    color: #fff;
+    background-color: #ffc107;
+    color: #051e22;
 }
 
-button:hover {
+.button:hover {
     background-color: #FFf;
     color: #111
 }
 
-h1 {
+.card p2 {
     color: #fff;
 }
 
+.card p1{
+    color:#ffc107;
+}
 .blur {
     box-shadow: inset 0px 0px 2px #fefefed1;
     backdrop-filter: saturate(100%) blur(1px);
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color:#1111116b;
+}
+
+main{
+    height: 100%;
 }

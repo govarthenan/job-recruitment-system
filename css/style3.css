@@ -1,5 +1,5 @@
 body{
-  background: url('../images/signup.jpg');
+  background: url('../images/faq.jpeg');
   background-size: cover;
   font-family: sans-serif;
   margin: 0;
@@ -10,10 +10,11 @@ body{
     height: 100vh;
     justify-content: center;
     align-items: center;
+
   }
   .container{
     max-width: 50%;
-    background-color: #fff;
+    background-color: #2b3030;
     padding: 50px;
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.15);
@@ -24,6 +25,11 @@ body{
     font-weight: 500;
     position: relative;
     left: 320px;
+    
+  }
+
+  .container h1{
+    color:  #ffc107;
   }
   .faq {
   width:70%;
@@ -35,19 +41,20 @@ body{
   background-color:#fff;
   }
   .question {
-  font-size:18px;
+  font-size:20px;
   background-color:#ddd;
   margin:0px;
   padding: 15px;
   }
   .answer {
-  font-size:12px;
+  font-size:15px;
   margin:0px;
   padding: 0px 15px;
   line-height:2;
   max-height:0px;
   overflow:hidden;
   transition:2s;
+  color: rgb(24, 24, 23);
   }
   .opener
   {
